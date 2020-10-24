@@ -1,0 +1,27 @@
+body{
+    //font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    background: rgb(0,43,128);
+    background: radial-gradient(circle, rgba(0,43,128,1) 0%, rgba(0,0,97,1) 57%, rgba(2,0,36,1) 96%);
+    color: white;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.App{
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+}
+.Content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-shadow:5px 10px 8px rgb(31, 31, 31);
+}
+.material-icons{
+    font-size: 48px;
+} 

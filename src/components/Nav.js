@@ -1,22 +1,25 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import '../styles/Nav.scss';
 
 function Nav() {
   return (
     <nav>
-      <Link to="/">
-      <h3>logo</h3>
-      </Link>
+      <NavLink to="/" exact activeClassName="active" className="main-nav">
+      <span class="material-icons ">
+      home
+      </span>
+      </NavLink>
       <ul className="nav-links">
-          <Link to="/portfolio">
+          <NavLink to="/portfolio" exact className="main-nav" activeClassName="active">
             <li>Portfolio</li>
-          </Link>
-          <Link to="/about">
+          </NavLink>
+          <NavLink to="/about" exact activeClassName="active" className="main-nav">
             <li>About</li>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact" exact activeClassName="active" className="main-nav">
             <li>Contact</li>
-          </Link>
+          </NavLink>
       </ul>
     </nav>
   );

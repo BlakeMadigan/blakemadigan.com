@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 /* Import Styles */
-import './styles/App.css';
+import './styles/App.scss';
 /* Import additional libraries */
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 /*
