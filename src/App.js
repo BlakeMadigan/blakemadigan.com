@@ -1,10 +1,24 @@
 import React from 'react';
-import './App.css';
-import Nav from './Nav';
-import Portfolio from './Portfolio';
-import About from './About';
+/* Import components */
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Contact from './components/Contact';
+/* Import Styles */
+import './styles/App.css';
+/* Import additional libraries */
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+/*
 
+I want to have a space feel to this, I want it to be out of this world something I can be proud of something that feels like the future.
+
+Points to consider:
+1. Display animations
+2. Spacey background
+3. Background music soft
+
+*/
 function App() {
   return (
     <Router>
@@ -14,16 +28,11 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
       </Switch>
     </div>
     </Router>
   );
 }
-
-const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-  </div>
-)
 
 export default App;
