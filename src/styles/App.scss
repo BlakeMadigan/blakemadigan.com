@@ -22,6 +22,19 @@ p{
     margin: auto;
     text-shadow:5px 10px 8px rgb(31, 31, 31);
 }
+.social {
+    display: flex;
+    padding-left: 3.5rem;
+    justify-content: flex-end;
+    width: 80%;
+}
 .material-icons{
     font-size: 48px;
 } 
+i{
+    font-size: 26px;
+    padding-right: .5rem;
+}
+a:visited{
+    color: white;
+}

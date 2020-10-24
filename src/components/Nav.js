@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav>
       <NavLink to="/" exact activeClassName="active" className="main-nav">
-      <span class="material-icons ">
+      <span class="material-icons">
       home
       </span>
       </NavLink>
